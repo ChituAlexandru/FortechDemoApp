@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>FortechDemoApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+      <servlet-name>campground</servlet-name>
+      <servlet-class>
+          org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/show</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/create</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/new</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/campgrounds/editCampground</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/comments/create</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/comments/new</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/comments/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/comments/editComment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/comments/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+      <servlet-name>campground</servlet-name>
+      <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>index</servlet-name>
+      <servlet-class>web.IndexServlet</servlet-class>
+  </servlet>
+</web-app>
